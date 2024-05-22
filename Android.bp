@@ -65,6 +65,17 @@ cc_prebuilt_library_shared {
 }
 
 android_app_import {
+	name: "MotoSignatureApp",
+	owner: "motorola",
+	apk: "proprietary/system/app/MotoSignatureApp/MotoSignatureApp.apk",
+	preprocessed: true,
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+}
+
+android_app_import {
 	name: "CACertService",
 	owner: "motorola",
 	apk: "proprietary/vendor/app/CACertService/CACertService.apk",
@@ -142,6 +153,18 @@ android_app_import {
 }
 
 android_app_import {
+	name: "MotorolaSettingsProvider",
+	owner: "motorola",
+	apk: "proprietary/system_ext/priv-app/MotorolaSettingsProvider/MotorolaSettingsProvider.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
+}
+
+android_app_import {
 	name: "WfdService",
 	owner: "motorola",
 	apk: "proprietary/system_ext/priv-app/WfdService/WfdService.apk",
@@ -181,6 +204,36 @@ dex_import {
 	name: "WfdCommon",
 	owner: "motorola",
 	jars: ["proprietary/system/framework/WfdCommon.jar"],
+}
+
+dex_import {
+	name: "com.motorola.frameworks.core.addon",
+	owner: "motorola",
+	jars: ["proprietary/system/framework/com.motorola.frameworks.core.addon.jar"],
+}
+
+dex_import {
+	name: "com.motorola.motosignature",
+	owner: "motorola",
+	jars: ["proprietary/system/framework/com.motorola.motosignature.jar"],
+}
+
+dex_import {
+	name: "moto-checkin",
+	owner: "motorola",
+	jars: ["proprietary/system/framework/moto-checkin.jar"],
+}
+
+dex_import {
+	name: "moto-core_services",
+	owner: "motorola",
+	jars: ["proprietary/system/framework/moto-core_services.jar"],
+}
+
+dex_import {
+	name: "moto-settings",
+	owner: "motorola",
+	jars: ["proprietary/system/framework/moto-settings.jar"],
 }
 
 dex_import {
