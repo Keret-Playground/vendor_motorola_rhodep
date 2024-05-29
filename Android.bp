@@ -131,6 +131,30 @@ android_app_import {
 }
 
 android_app_import {
+	name: "HotwordEnrollmentOKGoogleHEXAGON",
+	owner: "motorola",
+	apk: "proprietary/product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "HotwordEnrollmentXGoogleHEXAGON",
+	owner: "motorola",
+	apk: "proprietary/product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
 	name: "ImsRcsService",
 	owner: "motorola",
 	apk: "proprietary/system_ext/app/ImsRcsService/ImsRcsService.apk",
@@ -264,6 +288,13 @@ dex_import {
 }
 
 dex_import {
+	name: "com.android.hotwordenrollment.common.util",
+	owner: "motorola",
+	jars: ["proprietary/system_ext/framework/com.android.hotwordenrollment.common.util.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
 	name: "com.qti.dpmframework",
 	owner: "motorola",
 	jars: ["proprietary/system_ext/framework/com.qti.dpmframework.jar"],
@@ -393,6 +424,15 @@ prebuilt_etc_xml {
 	name: "android.hardware.gnss@2.1-service-qti",
 	owner: "motorola",
 	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.gnss@2.1-service-qti.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "android.hardware.neuralnetworks@1.3-service-qti",
+	owner: "motorola",
+	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
