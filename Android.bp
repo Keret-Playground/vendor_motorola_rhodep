@@ -180,6 +180,7 @@ android_app_import {
 	name: "DaxUI",
 	owner: "motorola",
 	apk: "proprietary/system_ext/priv-app/DaxUI/DaxUI.apk",
+	overrides: ["AudioFX", "MusicFX"],
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
