@@ -1,5 +1,5 @@
 
-s23403»ﬂ—ù"n
+s23403î∞”ù"n
 maxImageHeightò
 maxImageWidth†
 maxSubjectLengthP

@@ -1,11 +1,9 @@
 
-s52018»ﬂ—ùpE
+s52018î∞”ùpE
 dtac MMSmmsZhttp://mms.dtac.co.th:8002/b203.155.200.133j8080'
-dtac internetwww.dtac.co.th"¬
+dtac internetwww.dtac.co.th"Ä
 maxImageHeightò
-maxImageWidth†
-moto_smart_5g_enabled_bool( 
-moto_smart_5g_supported_bool(
+maxImageWidth†
 recipientLimit&
 roaming_operator_string_array2
 520

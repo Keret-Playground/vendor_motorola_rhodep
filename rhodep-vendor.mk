@@ -6,458 +6,6 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/motorola/rhodep
 
 PRODUCT_COPY_FILES += \
-    vendor/motorola/rhodep/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
-    vendor/motorola/rhodep/proprietary/vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-focalservice:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.biometrics.fingerprint@2.1-focalservice \
-    vendor/motorola/rhodep/proprietary/vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-ets:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-ets \
-    vendor/motorola/rhodep/proprietary/vendor/bin/egis_ident:$(TARGET_COPY_OUT_VENDOR)/bin/egis_ident \
-    vendor/motorola/rhodep/proprietary/vendor/etc/acdbdata/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Bluetooth_cal.acdb \
-    vendor/motorola/rhodep/proprietary/vendor/etc/acdbdata/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/General_cal.acdb \
-    vendor/motorola/rhodep/proprietary/vendor/etc/acdbdata/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Global_cal.acdb \
-    vendor/motorola/rhodep/proprietary/vendor/etc/acdbdata/Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Handset_cal.acdb \
-    vendor/motorola/rhodep/proprietary/vendor/etc/acdbdata/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Hdmi_cal.acdb \
-    vendor/motorola/rhodep/proprietary/vendor/etc/acdbdata/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Headset_cal.acdb \
-    vendor/motorola/rhodep/proprietary/vendor/etc/acdbdata/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Speaker_cal.acdb \
-    vendor/motorola/rhodep/proprietary/vendor/etc/acdbdata/adsp_avs_config.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/adsp_avs_config.acdb \
-    vendor/motorola/rhodep/proprietary/vendor/etc/acdbdata/nn_ns_models/candidate__2.7.1.31__3.0.0__eai_1.10_enpu1.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/candidate__2.7.1.31__3.0.0__eai_1.10_enpu1.pmd \
-    vendor/motorola/rhodep/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__eai_1.00.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__eai_1.00.pmd \
-    vendor/motorola/rhodep/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.2.0_0.1__3.0.0_0.0__eai_1.00.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.2.0_0.1__3.0.0_0.0__eai_1.00.pmd \
-    vendor/motorola/rhodep/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.6.0_0.0__3.0.0_0.0__eai_1.00-1.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.6.0_0.0__3.0.0_0.0__eai_1.00-1.pmd \
-    vendor/motorola/rhodep/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.6.0_0.0__3.0.0_0.0__eai_1.00.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.6.0_0.0__3.0.0_0.0__eai_1.00.pmd \
-    vendor/motorola/rhodep/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.6.1_0.0__eai_v1.10.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.6.1_0.0__eai_v1.10.pmd \
-    vendor/motorola/rhodep/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.6.3_0.0__3.0.0_0.0__eai_1.10.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.6.3_0.0__3.0.0_0.0__eai_1.10.pmd \
-    vendor/motorola/rhodep/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.6.3_0.0__3.0.0_0.0__eai_1.10_enpu1.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.6.3_0.0__3.0.0_0.0__eai_1.10_enpu1.pmd \
-    vendor/motorola/rhodep/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.6.3_0.0__3.0.0_0.0__eai_1.36_enpu2.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.6.3_0.0__3.0.0_0.0__eai_1.36_enpu2.pmd \
-    vendor/motorola/rhodep/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.7.4_0.0__3.0.0_0.0__eai_1.10_enpu1.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.7.4_0.0__3.0.0_0.0__eai_1.10_enpu1.pmd \
-    vendor/motorola/rhodep/proprietary/vendor/etc/acdbdata/nn_vad_models/fai_3.0.0_0.0_eai_1.00.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_vad_models/fai_3.0.0_0.0_eai_1.00.pmd \
-    vendor/motorola/rhodep/proprietary/vendor/etc/audio_ext_spkr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_ext_spkr.conf \
-    vendor/motorola/rhodep/proprietary/vendor/etc/audio_io_policy.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_io_policy.conf \
-    vendor/motorola/rhodep/proprietary/vendor/etc/audio_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info.xml \
-    vendor/motorola/rhodep/proprietary/vendor/etc/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
-    vendor/motorola/rhodep/proprietary/vendor/etc/camera/SwadAIMod.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/SwadAIMod.bin \
-    vendor/motorola/rhodep/proprietary/vendor/etc/camera/SwadCalib.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/SwadCalib.bin \
-    vendor/motorola/rhodep/proprietary/vendor/etc/camera/SwadParamList.txt:$(TARGET_COPY_OUT_VENDOR)/etc/camera/SwadParamList.txt \
-    vendor/motorola/rhodep/proprietary/vendor/etc/camera/aec_golden_wide.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/aec_golden_wide.bin \
-    vendor/motorola/rhodep/proprietary/vendor/etc/camera/dual_golden_wide.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/dual_golden_wide.bin \
-    vendor/motorola/rhodep/proprietary/vendor/etc/camera/vidhance_calibration:$(TARGET_COPY_OUT_VENDOR)/etc/camera/vidhance_calibration \
-    vendor/motorola/rhodep/proprietary/vendor/etc/camera/vidhance_calibration_2rd:$(TARGET_COPY_OUT_VENDOR)/etc/camera/vidhance_calibration_2rd \
-    vendor/motorola/rhodep/proprietary/vendor/etc/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
-    vendor/motorola/rhodep/proprietary/vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-focalservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.biometrics.fingerprint@2.1-focalservice.rc \
-    vendor/motorola/rhodep/proprietary/vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service-ets2.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.biometrics.fingerprint@2.1-service-ets2.rc \
-    vendor/motorola/rhodep/proprietary/vendor/etc/init/init.ets.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.ets.rc \
-    vendor/motorola/rhodep/proprietary/vendor/etc/libnfc-mtp-SN100-UICC.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-mtp-SN100-UICC.conf \
-    vendor/motorola/rhodep/proprietary/vendor/etc/libnfc-mtp-SN100.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-mtp-SN100.conf \
-    vendor/motorola/rhodep/proprietary/vendor/etc/libnfc-mtp-SN100_38_4MHZ.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-mtp-SN100_38_4MHZ.conf \
-    vendor/motorola/rhodep/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
-    vendor/motorola/rhodep/proprietary/vendor/etc/libnfc-nxp-pnscr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp-pnscr.conf \
-    vendor/motorola/rhodep/proprietary/vendor/etc/libnfc-qrd-SN100.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-qrd-SN100.conf \
-    vendor/motorola/rhodep/proprietary/vendor/etc/libnfc-qrd-SN100_38_4MHZ.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-qrd-SN100_38_4MHZ.conf \
-    vendor/motorola/rhodep/proprietary/vendor/etc/libnfc-sec-vendor.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-sec-vendor.conf \
-    vendor/motorola/rhodep/proprietary/vendor/etc/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml \
-    vendor/motorola/rhodep/proprietary/vendor/etc/pwr/PowerFeatureConfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/pwr/PowerFeatureConfig.xml \
-    vendor/motorola/rhodep/proprietary/vendor/etc/pwr/VideoPowerOptFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/pwr/VideoPowerOptFeature.xml \
-    vendor/motorola/rhodep/proprietary/vendor/etc/qdcm_calib_data_mipi_mot_cmd_csot_1080p_dsc_655.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_mipi_mot_cmd_csot_1080p_dsc_655.xml \
-    vendor/motorola/rhodep/proprietary/vendor/etc/qdcm_calib_data_mipi_mot_cmd_tm_1080p_dsc_655.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_mipi_mot_cmd_tm_1080p_dsc_655.xml \
-    vendor/motorola/rhodep/proprietary/vendor/etc/qdcm_calib_data_nt36672e_60_Hz_fhd_plus_video_mode_panel_without_DSC.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_nt36672e_60_Hz_fhd_plus_video_mode_panel_without_DSC.xml \
-    vendor/motorola/rhodep/proprietary/vendor/etc/qdcm_calib_data_nt36672e_fhd_plus_120Hz_Video_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_nt36672e_fhd_plus_120Hz_Video_panel.xml \
-    vendor/motorola/rhodep/proprietary/vendor/etc/qdcm_calib_data_nt36672e_fhd_plus_144Hz_video_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_nt36672e_fhd_plus_144Hz_video_panel.xml \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/config/ak991x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/ak991x_0.json \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/config/holi_default_sensors.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/holi_default_sensors.json \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/config/holi_lsm6dso_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/holi_lsm6dso_0.json \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/config/holi_power_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/holi_power_0.json \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/config/icm4x6xx.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/icm4x6xx.json \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/config/mmc56x3x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/mmc56x3x_0.json \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/config/mot_camgest.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/mot_camgest.json \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/config/sns_amd.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_amd.json \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/config/sns_amd_sw_disabled.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_amd_sw_disabled.json \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/config/sns_amd_sw_enabled.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_amd_sw_enabled.json \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/config/sns_cm.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_cm.json \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/config/sns_diag_filter.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_diag_filter.json \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/config/sns_fmv.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_fmv.json \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/config/sns_fmv_legacy.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_fmv_legacy.json \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/config/sns_geomag_rv.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_geomag_rv.json \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/config/sns_gyro_cal.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_gyro_cal.json \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/config/sns_mag_cal.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_mag_cal.json \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/config/sns_rmd.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_rmd.json \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/config/sns_rotv.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_rotv.json \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/config/sns_smd.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_smd.json \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/config/sns_tilt_sw_enabled.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_tilt_sw_enabled.json \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/config/sns_tilt_to_wake.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_tilt_to_wake.json \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/config/sns_wrist_pedo.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_wrist_pedo.json \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/config/stk3a5x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/stk3a5x_0.json \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/config/stk3a5x_0_DVT1.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/stk3a5x_0_DVT1.json \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/config/stk3a5x_0_DVT2.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/stk3a5x_0_DVT2.json \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/descriptor.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/descriptor.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/mot_barocal.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/mot_barocal.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/mot_camgest.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/mot_camgest.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/mot_chopchop.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/mot_chopchop.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/mot_devorient.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/mot_devorient.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/mot_dsp_usound.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/mot_dsp_usound.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/mot_flip.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/mot_flip.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/mot_ftm.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/mot_ftm.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/mot_glance.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/mot_glance.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/mot_log.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/mot_log.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/mot_lts.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/mot_lts.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/mot_ltv.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/mot_ltv.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/mot_movement.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/mot_movement.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/mot_offbody.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/mot_offbody.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/mot_probe.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/mot_probe.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/mot_proxcal.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/mot_proxcal.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/mot_stowed.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/mot_stowed.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/mot_tap.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/mot_tap.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/mot_vsync.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/mot_vsync.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/nanopb.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/nanopb.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_accel.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_accel.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_accel_cal.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_accel_cal.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_activity_recognition.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_activity_recognition.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_ambient_light.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_ambient_light.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_ambient_temperature.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_ambient_temperature.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_amd.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_amd.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_aont.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_aont.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_basic_gestures.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_basic_gestures.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_bring_to_ear.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_bring_to_ear.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_cal.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_cal.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_client.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_client.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_cmc.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_cmc.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_da_test.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_da_test.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_device_mode.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_device_mode.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_device_orient.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_device_orient.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_diag.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_diag.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_diag_sensor.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_diag_sensor.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_direct_channel.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_direct_channel.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_dpc.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_dpc.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_ext_svc.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_ext_svc.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_facing.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_facing.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_fmv.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_fmv.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_formatter.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_formatter.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_formatter_notify.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_formatter_notify.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_fw.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_fw.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_game_rv.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_game_rv.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_geomag_rv.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_geomag_rv.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_gravity.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_gravity.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_gyro.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_gyro.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_gyro_cal.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_gyro_cal.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_gyro_rot_matrix.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_gyro_rot_matrix.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_hall.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_hall.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_heart_beat.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_heart_beat.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_heart_rate.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_heart_rate.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_hinge_angle.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_hinge_angle.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_humidity.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_humidity.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_mag.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_mag.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_mag_cal.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_mag_cal.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_mot_factory_cal.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_mot_factory_cal.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_oem1.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_oem1.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_offbody_detect.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_offbody_detect.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_pedometer.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_pedometer.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_pedometer_wrist.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_pedometer_wrist.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_physical_sensor_test.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_physical_sensor_test.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_pose_6dof.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_pose_6dof.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_ppg.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_ppg.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_pressure.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_pressure.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_proximity.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_proximity.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_psmd.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_psmd.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_registry.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_registry.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_resampler.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_resampler.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_rgb.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_rgb.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_rmd.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_rmd.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_rotv.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_rotv.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_sar.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_sar.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_sensor_temperature.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_sensor_temperature.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_sig_motion.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_sig_motion.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_std.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_std.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_std_event_gated_sensor.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_std_event_gated_sensor.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_std_sensor.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_std_sensor.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_std_type.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_std_type.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_step_detect.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_step_detect.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_suid.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_suid.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_thermopile.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_thermopile.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_threshold.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_threshold.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_tilt.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_tilt.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_tilt_to_wake.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_tilt_to_wake.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_ultra_violet.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_ultra_violet.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_wrist_tilt_gesture.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_wrist_tilt_gesture.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/tcs3708.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/tcs3708.proto \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/sns_reg_config:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sns_reg_config \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sound_trigger_mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_mixer_paths.xml \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sound_trigger_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_platform_info.xml \
-    vendor/motorola/rhodep/proprietary/vendor/etc/thermal-engine-rhodep.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-rhodep.conf \
-    vendor/motorola/rhodep/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
-    vendor/motorola/rhodep/proprietary/vendor/etc/vhw.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vhw.xml \
-    vendor/motorola/rhodep/proprietary/vendor/firmware/aw882xx_pid_2113_acf.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw882xx_pid_2113_acf.bin \
-    vendor/motorola/rhodep/proprietary/vendor/firmware/aw_skt.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_skt.bin \
-    vendor/motorola/rhodep/proprietary/vendor/firmware/mot_dw9781c.prog:$(TARGET_COPY_OUT_VENDOR)/firmware/mot_dw9781c.prog \
-    vendor/motorola/rhodep/proprietary/vendor/firmware/tianma_goodix_cfg_group.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/tianma_goodix_cfg_group.bin \
-    vendor/motorola/rhodep/proprietary/vendor/lib/libacdbloader.so:$(TARGET_COPY_OUT_VENDOR)/lib/libacdbloader.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib/libcamxexternalformatutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxexternalformatutils.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/com.mot.eeprom.mot_gt24p128e_s5kjn1_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.mot.eeprom.mot_gt24p128e_s5kjn1_eeprom.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/com.mot.eeprom.mot_gt24p64e_ov16a1q_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.mot.eeprom.mot_gt24p64e_ov16a1q_eeprom.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/com.mot.eeprom.mot_rhodep_gc02m1_otp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.mot.eeprom.mot_rhodep_gc02m1_otp.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/com.mot.eeprom.mot_rhodep_s5k4h7_otp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.mot.eeprom.mot_rhodep_s5k4h7_otp.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/com.qti.sensor.mot_gc02m1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.mot_gc02m1.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/com.qti.sensor.mot_ov16a1q.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.mot_ov16a1q.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/com.qti.sensor.mot_s5k4h7.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.mot_s5k4h7.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/com.qti.sensor.mot_s5kjn1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.mot_s5kjn1.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/com.qti.sensormodule.mot_rhodep_gc02m1_sunwin.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.mot_rhodep_gc02m1_sunwin.bin \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/com.qti.sensormodule.mot_rhodep_ov16a1q_ofilm.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.mot_rhodep_ov16a1q_ofilm.bin \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/com.qti.sensormodule.mot_rhodep_s5k4h7_qtech_ff.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.mot_rhodep_s5k4h7_qtech_ff.bin \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/com.qti.sensormodule.mot_rhodep_s5kjn1_qtech.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.mot_rhodep_s5kjn1_qtech.bin \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/com.qti.sensormodule.mot_rhodep_s5kjn1_sunny.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.mot_rhodep_s5kjn1_sunny.bin \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/com.qti.tuned.default.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.default.bin \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/com.qti.tuned.mot_rhodep_gc02m1.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.mot_rhodep_gc02m1.bin \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/com.qti.tuned.mot_rhodep_ov16a1q.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.mot_rhodep_ov16a1q.bin \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/com.qti.tuned.mot_rhodep_s5k4h7ff.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.mot_rhodep_s5k4h7ff.bin \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/com.qti.tuned.mot_rhodep_s5kjn1.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.mot_rhodep_s5kjn1.bin \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/com.qti.tuned.mot_rhodep_s5kjn1_2nd.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.mot_rhodep_s5kjn1_2nd.bin \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.arcsoft.node.mfnr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.arcsoft.node.mfnr.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.mot.node.dc_capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.mot.node.dc_capture.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.mot.node.dc_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.mot.node.dc_preview.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qti.camx.chiiqutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.camx.chiiqutils.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qti.eisv2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.eisv2.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qti.eisv3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.eisv3.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qti.hvx.addconstant.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.hvx.addconstant.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qti.hvx.binning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.hvx.binning.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qti.node.customhwnode.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.customhwnode.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qti.node.depth.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.depth.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qti.node.dewarp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.dewarp.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qti.node.dummyrtb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.dummyrtb.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qti.node.dummysat.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.dummysat.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qti.node.eisv2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.eisv2.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qti.node.eisv3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.eisv3.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qti.node.fcv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.fcv.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qti.node.formatconversion.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.formatconversion.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qti.node.gpu.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.gpu.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qti.node.memcpy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.memcpy.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qti.node.ml.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.ml.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qti.node.remosaic.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.remosaic.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qti.node.stich.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.stich.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qti.node.swaidenoiser.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.swaidenoiser.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qti.node.swbestats.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.swbestats.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qti.node.swcac.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.swcac.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qti.node.swlsc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.swlsc.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qti.node.swmctf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.swmctf.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qti.node.swmfnr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.swmfnr.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qti.node.swpdpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.swpdpc.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qti.node.swpreprocess.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.swpreprocess.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qti.node.swregistration.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.swregistration.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qti.stats.aec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.aec.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qti.stats.aecwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.aecwrapper.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qti.stats.aecxcore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.aecxcore.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qti.stats.af.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.af.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qti.stats.afd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.afd.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qti.stats.afwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.afwrapper.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qti.stats.asd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.asd.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qti.stats.awb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.awb.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qti.stats.awbwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.awbwrapper.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qti.stats.cnndriver.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.cnndriver.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qti.stats.haf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.haf.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qti.stats.hafoverride.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.hafoverride.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qti.stats.pdlib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.pdlib.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qti.stats.pdlibsony.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.pdlibsony.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qti.stats.pdlibwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.pdlibwrapper.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qtistatic.stats.aec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qtistatic.stats.aec.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qtistatic.stats.af.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qtistatic.stats.af.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qtistatic.stats.awb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qtistatic.stats.awb.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qtistatic.stats.pdlib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qtistatic.stats.pdlib.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.vidhance.node.ica.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.vidhance.node.ica.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.vidhance.node.processing.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.vidhance.node.processing.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.vidhance.stats.aec_dmbr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.vidhance.stats.aec_dmbr.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/libdepthmapwrapper_secure.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/libdepthmapwrapper_secure.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/fdconfigpreview.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigpreview.bin \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/fdconfigpreviewlite.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigpreviewlite.bin \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/fdconfigvideo.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigvideo.bin \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/fdconfigvideolite.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigvideolite.bin \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/com.qti.chiusecaseselector.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.chiusecaseselector.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/com.qti.feature2.anchorsync.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.anchorsync.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/com.qti.feature2.demux.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.demux.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/com.qti.feature2.frameselect.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.frameselect.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/com.qti.feature2.fusion.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.fusion.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/com.qti.feature2.generic.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.generic.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/com.qti.feature2.gs.mannar.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.gs.mannar.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/com.qti.feature2.hdr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.hdr.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/com.qti.feature2.mcreprocrt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.mcreprocrt.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/com.qti.feature2.memcpy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.memcpy.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/com.qti.feature2.mfsr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.mfsr.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/com.qti.feature2.mux.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.mux.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/com.qti.feature2.rawhdr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.rawhdr.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/com.qti.feature2.realtimeserializer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.realtimeserializer.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/com.qti.feature2.rt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.rt.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/com.qti.feature2.rtmcx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.rtmcx.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/com.qti.feature2.serializer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.serializer.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/com.qti.feature2.swmf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.swmf.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/com.qti.settings.mannar.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.settings.mannar.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/com.qti.stats.common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.stats.common.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/com.qualcomm.mcx.distortionmapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.mcx.distortionmapper.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/com.qualcomm.mcx.linearmapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.mcx.linearmapper.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/com.qualcomm.mcx.policy.mfl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.mcx.policy.mfl.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/com.qualcomm.qti.mcx.usecase.extension.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.mcx.usecase.extension.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/hw/camera.qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/camera.qcom.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/hw/com.qti.chi.override.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/com.qti.chi.override.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/hw/fingerprint.focaltech.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.focaltech.default.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/hw/libfactorylib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/libfactorylib.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/libBSTSWAD.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libBSTSWAD.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/libRbsFlow.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libRbsFlow.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/libacdbloader.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libacdbloader.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/libaidenoiser.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaidenoiser.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/libaidenoiserv2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaidenoiserv2.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/libarcsoft_low_light_shot.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_low_light_shot.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/libbitmlengine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbitmlengine.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/libbitmlenginev2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbitmlenginev2.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/libcamera_nn_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamera_nn_stub.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/libcamerapostproc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamerapostproc.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/libcamxexternalformatutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxexternalformatutils.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/libcamxfacialfeatures.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxfacialfeatures.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/libcamxfdalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxfdalgo.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/libcamxfdengine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxfdengine.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/libcamxifestriping.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxifestriping.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/libcamximageformatutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamximageformatutils.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/libcamxqsatalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxqsatalgo.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/libcamxstatscore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxstatscore.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/libcamxswispiqmodule.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxswispiqmodule.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/libcamxswprocessalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxswprocessalgo.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/libcamxtintlessalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxtintlessalgo.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/libchilog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libchilog.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/libcom.qti.chinodeutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcom.qti.chinodeutils.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/libets_teeclient_v2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libets_teeclient_v2.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/libfcell.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfcell.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/libipebpsstriping.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libipebpsstriping.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/libipebpsstriping170.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libipebpsstriping170.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/libjpege.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjpege.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/liblowlight_ai_portrait.arcsoft.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblowlight_ai_portrait.arcsoft.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/libmctfengine_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmctfengine_stub.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/libmfec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmfec.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/libmmcamera_bestats.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_bestats.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/libmmcamera_cac3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_cac3.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/libmmcamera_faceproc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_faceproc.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/libmmcamera_faceproc2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_faceproc2.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/libmmcamera_lscv35.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_lscv35.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/libmmcamera_mfnr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_mfnr.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/libmmcamera_mfnr_t4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_mfnr_t4.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/libmmcamera_pdpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_pdpc.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/libmot_afd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmot_afd.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/libmotohid.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmotohid.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/libmotoisdataqueue.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmotoisdataqueue.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/libmpbase.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmpbase.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/libofflinedump.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libofflinedump.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/libofflinelog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libofflinelog.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/libopencv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libopencv.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/libopestriping.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libopestriping.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/libos.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libos.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/libpowercore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpowercore.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/libqll10.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqll10.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/libqllengine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqllengine.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/libremosaic_wrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libremosaic_wrapper.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/libswregistrationalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libswregistrationalgo.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/libsynx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsynx.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/libtfestriping.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtfestriping.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/libthreadutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libthreadutils.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/libundistort_impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libundistort_impl.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/libvideooptfeature.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvideooptfeature.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/libvidhance.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvidhance.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/libvidhance_active_ois.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvidhance_active_ois.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/libvidhance_dmbr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvidhance_dmbr.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/libvidhance_face_stabilizer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvidhance_face_stabilizer.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/libvidhance_fbc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvidhance_fbc.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/libvidhance_horizon_correction.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvidhance_horizon_correction.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/libvidhance_stabilizer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvidhance_stabilizer.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/libvidhance_zoom_stabilization.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvidhance_zoom_stabilization.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/sensors.moto.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.moto.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/sensors.ssc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.ssc.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/vendor.egistec.hardware.fingerprint@4.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.egistec.hardware.fingerprint@4.0.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/vendor.focaltech.fingerprint@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.focaltech.fingerprint@1.0.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
-
-# NFC
-PRODUCT_COPY_FILES += \
-    vendor/motorola/rhodep/proprietary/system_ext/lib/libnfc-sec.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libnfc-sec.so \
-    vendor/motorola/rhodep/proprietary/system_ext/lib/libnfc_sec_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libnfc_sec_jni.so \
-    vendor/motorola/rhodep/proprietary/system_ext/lib64/libnfc-sec.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libnfc-sec.so \
-    vendor/motorola/rhodep/proprietary/system_ext/lib64/libnfc_sec_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libnfc_sec_jni.so \
-    vendor/motorola/rhodep/proprietary/vendor/etc/init/android.hardware.nfc@1.2-service.sec.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.nfc@1.2-service.sec.rc \
-    vendor/motorola/rhodep/proprietary/vendor/etc/init/init.nfc.sec.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.nfc.sec.rc \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sec_s3nrn4v_hwreg.bin:$(TARGET_COPY_OUT_VENDOR)/etc/sec_s3nrn4v_hwreg.bin \
-    vendor/motorola/rhodep/proprietary/vendor/etc/sec_s3nrn4v_swreg.bin:$(TARGET_COPY_OUT_VENDOR)/etc/sec_s3nrn4v_swreg.bin \
-    vendor/motorola/rhodep/proprietary/vendor/firmware/sec_s3nrn4v_firmware.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/sec_s3nrn4v_firmware.bin
-
-PRODUCT_PACKAGES += \
-    HotwordEnrollmentOKGoogleHEXAGON \
-    HotwordEnrollmentXGoogleHEXAGON \
-    com.android.hotwordenrollment.common.util
-
-PRODUCT_COPY_FILES += \
-    vendor/motorola/rhodep/proprietary/system/etc/permissions/com.motorola.frameworks.core.addon.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.motorola.frameworks.core.addon.xml \
-    vendor/motorola/rhodep/proprietary/system/etc/permissions/com.motorola.motosignature.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.motorola.motosignature.xml \
-    vendor/motorola/rhodep/proprietary/system/etc/permissions/moto-checkin.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/moto-checkin.xml \
-    vendor/motorola/rhodep/proprietary/system/etc/permissions/moto-core_services.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/moto-core_services.xml \
-    vendor/motorola/rhodep/proprietary/system/etc/permissions/moto-settings.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/moto-settings.xml \
-    vendor/motorola/rhodep/proprietary/system_ext/bin/motsettings:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/motsettings
-
-PRODUCT_PACKAGES += \
-    MotoSignatureApp \
-    MotorolaSettingsProvider \
-    com.motorola.frameworks.core.addon \
-    com.motorola.motosignature \
-    moto-checkin \
-    moto-core_services \
-    moto-settings
-
-# MotCamera4
-PRODUCT_COPY_FILES += \
-    vendor/motorola/rhodep/proprietary/vendor/etc/permissions/com.motorola.camera3.content.ai.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.motorola.camera3.content.ai.xml \
-    vendor/motorola/rhodep/proprietary/vendor/etc/permissions/com.motorola.camera3.lens.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.motorola.camera3.lens.xml \
-    vendor/motorola/rhodep/proprietary/vendor/etc/permissions/com.motorola.camera3.rhodep.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.motorola.camera3.rhodep.xml \
-    vendor/motorola/rhodep/proprietary/product/etc/permissions/com.motorola.camera3.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.motorola.camera3.xml \
-    vendor/motorola/rhodep/proprietary/vendor/etc/permissions/com.motorola.camera3.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.motorola.camera3.xml \
-    vendor/motorola/rhodep/proprietary/product/etc/permissions/com.motorola.moto-uirefresh.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.motorola.moto-uirefresh.xml \
-    vendor/motorola/rhodep/proprietary/product/etc/permissions/deviceowner-configuration-com.motorola.camera3.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/deviceowner-configuration-com.motorola.camera3.xml \
-    vendor/motorola/rhodep/proprietary/product/etc/permissions/privapp-permissions-com.motorola.camera3.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-com.motorola.camera3.xml \
-    vendor/motorola/rhodep/proprietary/product/etc/sysconfig/hiddenapi-whitelist-com.motorola.camera3.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/hiddenapi-whitelist-com.motorola.camera3.xml \
-    vendor/motorola/rhodep/proprietary/product/lib64/libAncHumanSegFigureFusion-jni.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libAncHumanSegFigureFusion-jni.so \
-    vendor/motorola/rhodep/proprietary/product/lib64/libanc_night.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libanc_night.so \
-    vendor/motorola/rhodep/proprietary/product/lib64/libarcsoft_dualcam_refocus.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libarcsoft_dualcam_refocus.so \
-    vendor/motorola/rhodep/proprietary/product/lib64/libarcsoft_high_dynamic_range.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libarcsoft_high_dynamic_range.so \
-    vendor/motorola/rhodep/proprietary/product/lib64/libarcsoft_low_light_shot.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libarcsoft_low_light_shot.so \
-    vendor/motorola/rhodep/proprietary/product/lib64/libarcsoft_scbokeh_Generic.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libarcsoft_scbokeh_Generic.so \
-    vendor/motorola/rhodep/proprietary/product/lib64/libas-super-slow-motion.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libas-super-slow-motion.so \
-    vendor/motorola/rhodep/proprietary/product/lib64/libbarhopper_v3.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libbarhopper_v3.so \
-    vendor/motorola/rhodep/proprietary/product/lib64/libbg-postproc-jni.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libbg-postproc-jni.so \
-    vendor/motorola/rhodep/proprietary/product/lib64/libcamerax_extension_jni.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libcamerax_extension_jni.so \
-    vendor/motorola/rhodep/proprietary/product/lib64/libc++_shared.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libc++_shared.so \
-    vendor/motorola/rhodep/proprietary/product/lib64/libc++.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libc++.so \
-    vendor/motorola/rhodep/proprietary/product/lib64/libdoc-util.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libdoc-util.so \
-    vendor/motorola/rhodep/proprietary/product/lib64/libdynamic_depth.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libdynamic_depth.so \
-    vendor/motorola/rhodep/proprietary/product/lib64/libfn-beauty-vfb-legacy-base.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libfn-beauty-vfb-legacy-base.so \
-    vendor/motorola/rhodep/proprietary/product/lib64/libFNVfbEngineHAL_legacy.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libFNVfbEngineHAL_legacy.so \
-    vendor/motorola/rhodep/proprietary/product/lib64/libfoundation.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libfoundation.so \
-    vendor/motorola/rhodep/proprietary/product/lib64/libgg-dynamic_depth.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libgg-dynamic_depth.so \
-    vendor/motorola/rhodep/proprietary/product/lib64/libgg-tensorflow-lite.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libgg-tensorflow-lite.so \
-    vendor/motorola/rhodep/proprietary/product/lib64/libgif.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libgif.so \
-    vendor/motorola/rhodep/proprietary/product/lib64/libjpeg.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libjpeg.so \
-    vendor/motorola/rhodep/proprietary/product/lib64/liblenovo_panorama.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/liblenovo_panorama.so \
-    vendor/motorola/rhodep/proprietary/product/lib64/libmcf-base.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libmcf-base.so \
-    vendor/motorola/rhodep/proprietary/product/lib64/libmcf-jni.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libmcf-jni.so \
-    vendor/motorola/rhodep/proprietary/product/lib64/libmcf-qc-fd-offline_local.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libmcf-qc-fd-offline_local.so \
-    vendor/motorola/rhodep/proprietary/product/lib64/libmcf-stand-alone-sm.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libmcf-stand-alone-sm.so \
-    vendor/motorola/rhodep/proprietary/product/lib64/libmeishe-nv-effects-thumbnails.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libmeishe-nv-effects-thumbnails.so \
-    vendor/motorola/rhodep/proprietary/product/lib64/libmmcamera_faceproc2.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libmmcamera_faceproc2.so \
-    vendor/motorola/rhodep/proprietary/product/lib64/libmorpho_cinema_graph.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libmorpho_cinema_graph.so \
-    vendor/motorola/rhodep/proprietary/product/lib64/libmorpho_HDSR.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libmorpho_HDSR.so \
-    vendor/motorola/rhodep/proprietary/product/lib64/libmorpho_panorama_gp3_core.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libmorpho_panorama_gp3_core.so \
-    vendor/motorola/rhodep/proprietary/product/lib64/libmorpho_panorama_gp3.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libmorpho_panorama_gp3.so \
-    vendor/motorola/rhodep/proprietary/product/lib64/libmorpho_sensor_fusion.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libmorpho_sensor_fusion.so \
-    vendor/motorola/rhodep/proprietary/product/lib64/libmot-cinemagraph-engine.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libmot-cinemagraph-engine.so \
-    vendor/motorola/rhodep/proprietary/product/lib64/libmot-util.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libmot-util.so \
-    vendor/motorola/rhodep/proprietary/product/lib64/libmpbase.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libmpbase.so \
-    vendor/motorola/rhodep/proprietary/product/lib64/libNvBeautyEffect.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libNvBeautyEffect.so \
-    vendor/motorola/rhodep/proprietary/product/lib64/libNvEffectSdkCore.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libNvEffectSdkCore.so \
-    vendor/motorola/rhodep/proprietary/product/lib64/libqc-snpe.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libqc-snpe.so \
-    vendor/motorola/rhodep/proprietary/product/lib64/libtensorflowlite_gpu_delegate.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libtensorflowlite_gpu_delegate.so \
-    vendor/motorola/rhodep/proprietary/product/lib64/libtensorflowlite_jni.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libtensorflowlite_jni.so \
-    vendor/motorola/rhodep/proprietary/product/lib64/libtensorflowlite.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libtensorflowlite.so
-
-PRODUCT_PACKAGES += \
-    MotCamera3AI \
-    MotCamera4
-
-PRODUCT_COPY_FILES += \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/carrier_list.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/carrier_list.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/others.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/others.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s001001.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s001001.pb \
@@ -494,6 +42,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s20404spn_3d_hot_20_mobile.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s20404spn_3d_hot_20_mobile.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s20404spn_3d_jump.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s20404spn_3d_jump.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s20404spn_3d_u_2e_s_2e__20_cellular.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s20404spn_3d_u_2e_s_2e__20_cellular.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s20404spn_3d_u_2e_s_2e_cellular.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s20404spn_3d_u_2e_s_2e_cellular.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s20408.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s20408.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s20408imsi_3d_204080950.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s20408imsi_3d_204080950.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s20412.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s20412.pb \
@@ -508,6 +57,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s20416spn_3d_simpel.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s20416spn_3d_simpel.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s20416spn_3d_t_2d_mobile_20_nl.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s20416spn_3d_t_2d_mobile_20_nl.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s20416spn_3d_tele2_20_nl.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s20416spn_3d_tele2_20_nl.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s20417.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s20417.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s20433.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s20433.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s20465gid1_3d_50.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s20465gid1_3d_50.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s20601.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s20601.pb \
@@ -592,6 +142,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s20827.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s20827.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s20827spn_3d_coriolis.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s20827spn_3d_coriolis.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s20835.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s20835.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s20838.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s20838.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s20888.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s20888.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s21401.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s21401.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s21402.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s21402.pb \
@@ -806,6 +357,10 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s23207.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s23207.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s23207gid1_3d_07.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s23207gid1_3d_07.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s23207gid1_3d_30.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s23207gid1_3d_30.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s23207gid1_3d_70.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s23207gid1_3d_70.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s23207gid1_3d_72.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s23207gid1_3d_72.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s23207gid1_3d_74.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s23207gid1_3d_74.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s23207gid1_3d_75.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s23207gid1_3d_75.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s23207gid1_3d_ff.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s23207gid1_3d_ff.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s23207imsi_3d_23207718xxxxxxx.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s23207imsi_3d_23207718xxxxxxx.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s23207imsi_3d_2320776xxxxxxxx.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s23207imsi_3d_2320776xxxxxxxx.pb \
@@ -818,7 +373,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s23212.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s23212.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s23214.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s23214.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s23401.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s23401.pb \
-    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s23402.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s23402.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s23403.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s23403.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s23408gid1_3d_b2.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s23408gid1_3d_b2.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s23408gid1_3d_b2ff.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s23408gid1_3d_b2ff.pb \
@@ -835,7 +389,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s23410gid1_3d_99.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s23410gid1_3d_99.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s23410spn_3d_giffgaff.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s23410spn_3d_giffgaff.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s23410spn_3d_jump.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s23410spn_3d_jump.pb \
-    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s23411.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s23411.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s23415.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s23415.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s23415gid1_3d_b3.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s23415gid1_3d_b3.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s23415gid1_3d_c1.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s23415gid1_3d_c1.pb \
@@ -933,6 +486,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s24209.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s24209.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s24212.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s24212.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s24214.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s24214.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s24215.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s24215.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s24215gid1_3d_0e.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s24215gid1_3d_0e.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s24403.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s24403.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s24404.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s24404.pb \
@@ -947,6 +501,9 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s24602.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s24602.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s24603.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s24603.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s246081.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s246081.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s246082.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s246082.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s246083.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s246083.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s246084.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s246084.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s24681.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s24681.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s24701.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s24701.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s24702.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s24702.pb \
@@ -990,6 +547,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s25701.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s25701.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s25702.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s25702.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s25901.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s25901.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s25902.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s25902.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s25905.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s25905.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s26001.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s26001.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s26002.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s26002.pb \
@@ -1108,8 +666,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s26206gid1_3d_4b.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s26206gid1_3d_4b.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s26206gid1_3d_99.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s26206gid1_3d_99.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s26206spn_3d_business.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s26206spn_3d_business.pb \
-    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s26206spn_3d_congstar.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s26206spn_3d_congstar.pb \
-    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s26206spn_3d_congstar_2e_de.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s26206spn_3d_congstar_2e_de.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s26206spn_3d_privat.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s26206spn_3d_privat.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s26206spn_3d_t_2d_campus.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s26206spn_3d_t_2d_campus.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s26206spn_3d_t_2d_mobile_20_d.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s26206spn_3d_t_2d_mobile_20_d.pb \
@@ -1117,9 +673,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s26207.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s26207.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s26207gid1_3d_010301ffffffffffffffffffffffffffffffffff.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s26207gid1_3d_010301ffffffffffffffffffffffffffffffffff.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s26207gid1_3d_010901ffffffffffffffffffffffffffffffffff.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s26207gid1_3d_010901ffffffffffffffffffffffffffffffffff.pb \
-    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s26207imsi_3d_2620739xxxxxxxx.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s26207imsi_3d_2620739xxxxxxxx.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s26207imsi_3d_2620749.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s26207imsi_3d_2620749.pb \
-    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s26207imsi_3d_2620749xxxxxxxx.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s26207imsi_3d_2620749xxxxxxxx.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s26207imsi_3d_26207500.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s26207imsi_3d_26207500.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s26207imsi_3d_26207515.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s26207imsi_3d_26207515.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s26207imsi_3d_26207520.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s26207imsi_3d_26207520.pb \
@@ -1129,6 +683,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s26210.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s26210.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s26211.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s26211.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s26212.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s26212.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s26214.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s26214.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s26223.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s26223.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s26242.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s26242.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s26277.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s26277.pb \
@@ -1189,6 +744,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s29370imsi_3d_29370029xxxxxxx.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s29370imsi_3d_29370029xxxxxxx.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s29401.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s29401.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s29401gid1_3d_ff.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s29401gid1_3d_ff.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s29401spn_3d_t_2d_mobile_20_mk.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s29401spn_3d_t_2d_mobile_20_mk.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s29401spn_3d_telekom_20_mk.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s29401spn_3d_telekom_20_mk.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s29401spn_3d_telekom_2e_mk.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s29401spn_3d_telekom_2e_mk.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s29402.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s29402.pb \
@@ -1232,7 +788,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s302270.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s302270.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s302290.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s302290.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s302320.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s302320.pb \
-    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s30237.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s30237.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s302370.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s302370.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s302370gid1_3d_2c.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s302370gid1_3d_2c.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s302370gid1_3d_4d.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s302370gid1_3d_4d.pb \
@@ -1286,6 +841,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s302720imsi_3d_302720x98.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s302720imsi_3d_302720x98.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s302720imsi_3d_302720x98xx.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s302720imsi_3d_302720x98xx.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s302720spn_3d_cityfone.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s302720spn_3d_cityfone.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s302721.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s302721.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s302780.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s302780.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s302860.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s302860.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s30286gid1_3d_4b4f.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s30286gid1_3d_4b4f.pb \
@@ -1611,7 +1167,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310130spn_3d_sprint.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310130spn_3d_sprint.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310140.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310140.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310150.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310150.pb \
-    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310150gid1_3d_52ff.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310150gid1_3d_52ff.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310160.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310160.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310160gid1_3d_1a53.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310160gid1_3d_1a53.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310160gid1_3d_2ac9.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310160gid1_3d_2ac9.pb \
@@ -1655,8 +1210,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310240gid1_3d_534d.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310240gid1_3d_534d.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310240gid1_3d_554d.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310240gid1_3d_554d.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310240gid1_3d_6132.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310240gid1_3d_6132.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310240gid1_3d_6134.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310240gid1_3d_6134.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310240gid1_3d_6230.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310240gid1_3d_6230.pb \
-    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310240gid1_3d_6303.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310240gid1_3d_6303.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310240gid1_3d_6430.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310240gid1_3d_6430.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310240gid1_3d_6432.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310240gid1_3d_6432.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310240gid1_3d_6434.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310240gid1_3d_6434.pb \
@@ -1665,6 +1220,12 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310240gid1_3d_6440.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310240gid1_3d_6440.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310240gid1_3d_6901.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310240gid1_3d_6901.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310240gid1_3d_6902.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310240gid1_3d_6902.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310240gid1_3d_6903.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310240gid1_3d_6903.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310240gid1_3d_6905.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310240gid1_3d_6905.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310240gid1_3d_6907.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310240gid1_3d_6907.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310240gid1_3d_6909.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310240gid1_3d_6909.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310240gid1_3d_6910.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310240gid1_3d_6910.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310240gid1_3d_6911.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310240gid1_3d_6911.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310240gid1_3d_6941.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310240gid1_3d_6941.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310240gid1_3d_6957.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310240gid1_3d_6957.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310240gid1_3d_6c79.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310240gid1_3d_6c79.pb \
@@ -1673,6 +1234,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310240gid1_3d_7032.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310240gid1_3d_7032.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310240gid1_3d_7531.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310240gid1_3d_7531.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310240gid1_3d_756d.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310240gid1_3d_756d.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310240gid1_3d_7601.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310240gid1_3d_7601.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310240gid1_3d_ddff.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310240gid1_3d_ddff.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310240gid1_3d_deff.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310240gid1_3d_deff.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310250.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310250.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310250gid1_3d_1a53.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310250gid1_3d_1a53.pb \
@@ -1719,9 +1282,14 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310260gid1_3d_61ff.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310260gid1_3d_61ff.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310260gid1_3d_6230.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310260gid1_3d_6230.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310260gid1_3d_62ff.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310260gid1_3d_62ff.pb \
-    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310260gid1_3d_6303.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310260gid1_3d_6303.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310260gid1_3d_6901.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310260gid1_3d_6901.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310260gid1_3d_6902.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310260gid1_3d_6902.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310260gid1_3d_6903.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310260gid1_3d_6903.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310260gid1_3d_6905.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310260gid1_3d_6905.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310260gid1_3d_6907.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310260gid1_3d_6907.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310260gid1_3d_6909.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310260gid1_3d_6909.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310260gid1_3d_6910.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310260gid1_3d_6910.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310260gid1_3d_6911.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310260gid1_3d_6911.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310260gid1_3d_6941.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310260gid1_3d_6941.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310260gid1_3d_6957.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310260gid1_3d_6957.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310260gid1_3d_69ff.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310260gid1_3d_69ff.pb \
@@ -1734,6 +1302,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310260gid1_3d_7477.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310260gid1_3d_7477.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310260gid1_3d_7531.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310260gid1_3d_7531.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310260gid1_3d_756d.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310260gid1_3d_756d.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310260gid1_3d_7601.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310260gid1_3d_7601.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310260gid1_3d_8234.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310260gid1_3d_8234.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310260gid1_3d_ab.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310260gid1_3d_ab.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310260gid1_3d_ddff.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310260gid1_3d_ddff.pb \
@@ -1745,7 +1314,18 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310270gid1_3d_6d38.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310270gid1_3d_6d38.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310280.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310280.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310280gid1_3d_15ff.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310280gid1_3d_15ff.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310280gid1_3d_20ff.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310280gid1_3d_20ff.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310280gid1_3d_21ff.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310280gid1_3d_21ff.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310280gid1_3d_22ff.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310280gid1_3d_22ff.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310280gid1_3d_23ff.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310280gid1_3d_23ff.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310280gid1_3d_24ff.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310280gid1_3d_24ff.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310280gid1_3d_25ff.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310280gid1_3d_25ff.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310280gid1_3d_26ff.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310280gid1_3d_26ff.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310280gid1_3d_27ff.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310280gid1_3d_27ff.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310280gid1_3d_28ff.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310280gid1_3d_28ff.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310280gid1_3d_29ff.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310280gid1_3d_29ff.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310280gid1_3d_2ac9.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310280gid1_3d_2ac9.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310280gid1_3d_30ff.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310280gid1_3d_30ff.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310280gid1_3d_4102.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310280gid1_3d_4102.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310280gid1_3d_4201.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310280gid1_3d_4201.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310280gid1_3d_44ff.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310280gid1_3d_44ff.pb \
@@ -1779,7 +1359,17 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310390.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310390.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310410.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310410.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310410gid1_3d_15ff.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310410gid1_3d_15ff.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310410gid1_3d_21ff.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310410gid1_3d_21ff.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310410gid1_3d_22ff.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310410gid1_3d_22ff.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310410gid1_3d_23ff.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310410gid1_3d_23ff.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310410gid1_3d_24ff.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310410gid1_3d_24ff.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310410gid1_3d_25ff.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310410gid1_3d_25ff.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310410gid1_3d_26ff.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310410gid1_3d_26ff.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310410gid1_3d_27ff.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310410gid1_3d_27ff.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310410gid1_3d_28ff.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310410gid1_3d_28ff.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310410gid1_3d_29ff.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310410gid1_3d_29ff.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310410gid1_3d_2ac9.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310410gid1_3d_2ac9.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310410gid1_3d_30ff.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310410gid1_3d_30ff.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310410gid1_3d_3430.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310410gid1_3d_3430.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310410gid1_3d_3432.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310410gid1_3d_3432.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310410gid1_3d_3434.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310410gid1_3d_3434.pb \
@@ -1823,12 +1413,14 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310560gid1_3d_deff.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310560gid1_3d_deff.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310570.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310570.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310580.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310580.pb \
-    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310580spn_3d_inland_20_cellular.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310580spn_3d_inland_20_cellular.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310580spn_3d_sprint.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310580spn_3d_sprint.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310590.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310590.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310590gid1_3d_ba01270000000000.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310590gid1_3d_ba01270000000000.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310590gid1_3d_ba01450000000000.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310590gid1_3d_ba01450000000000.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310590gid1_3d_ba01640000000000.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310590gid1_3d_ba01640000000000.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310591.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310591.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310591gid1_3d_ba01270000000000.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310591gid1_3d_ba01270000000000.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310591gid1_3d_ba01640000000000.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310591gid1_3d_ba01640000000000.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310592.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310592.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310592gid1_3d_ba01270000000000.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310592gid1_3d_ba01270000000000.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310593.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310593.pb \
@@ -1846,6 +1438,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310599.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310599.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310599gid1_3d_ba01270000000000.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310599gid1_3d_ba01270000000000.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310599gid1_3d_ba01450000000000.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310599gid1_3d_ba01450000000000.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310599gid1_3d_ba01640000000000.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310599gid1_3d_ba01640000000000.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310600.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310600.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310600gid1_3d_ba00040000000000.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310600gid1_3d_ba00040000000000.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310610.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310610.pb \
@@ -1880,7 +1473,18 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310930gid1_3d_ba00090000000000.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310930gid1_3d_ba00090000000000.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310930gid1_3d_ba00170000000000.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310930gid1_3d_ba00170000000000.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310950.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310950.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310950gid1_3d_20ff.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310950gid1_3d_20ff.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310950gid1_3d_21ff.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310950gid1_3d_21ff.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310950gid1_3d_22ff.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310950gid1_3d_22ff.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310950gid1_3d_23ff.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310950gid1_3d_23ff.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310950gid1_3d_24ff.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310950gid1_3d_24ff.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310950gid1_3d_25ff.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310950gid1_3d_25ff.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310950gid1_3d_26ff.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310950gid1_3d_26ff.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310950gid1_3d_27ff.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310950gid1_3d_27ff.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310950gid1_3d_28ff.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310950gid1_3d_28ff.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310950gid1_3d_29ff.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310950gid1_3d_29ff.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310950gid1_3d_2ac9.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310950gid1_3d_2ac9.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310950gid1_3d_30ff.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310950gid1_3d_30ff.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310950gid1_3d_4102.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310950gid1_3d_4102.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310950gid1_3d_4201.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310950gid1_3d_4201.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s310950gid1_3d_44ff.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s310950gid1_3d_44ff.pb \
@@ -1919,11 +1523,23 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s311140spn_3d_sprocket.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s311140spn_3d_sprocket.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s311167.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s311167.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s311180.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s311180.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s311180gid1_3d_21ff.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s311180gid1_3d_21ff.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s311180gid1_3d_22ff.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s311180gid1_3d_22ff.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s311180gid1_3d_23ff.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s311180gid1_3d_23ff.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s311180gid1_3d_24ff.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s311180gid1_3d_24ff.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s311180gid1_3d_25ff.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s311180gid1_3d_25ff.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s311180gid1_3d_26ff.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s311180gid1_3d_26ff.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s311180gid1_3d_27ff.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s311180gid1_3d_27ff.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s311180gid1_3d_28ff.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s311180gid1_3d_28ff.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s311180gid1_3d_29ff.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s311180gid1_3d_29ff.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s311180gid1_3d_2ac9.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s311180gid1_3d_2ac9.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s311180gid1_3d_30ff.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s311180gid1_3d_30ff.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s311180gid1_3d_3430.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s311180gid1_3d_3430.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s311180gid1_3d_3432.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s311180gid1_3d_3432.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s311180gid1_3d_3434.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s311180gid1_3d_3434.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s311180gid1_3d_3436.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s311180gid1_3d_3436.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s311180gid1_3d_3438.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s311180gid1_3d_3438.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s311180gid1_3d_3440.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s311180gid1_3d_3440.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s311180gid1_3d_4102.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s311180gid1_3d_4102.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s311180gid1_3d_4201.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s311180gid1_3d_4201.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s311180gid1_3d_44ff.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s311180gid1_3d_44ff.pb \
@@ -2015,6 +1631,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s311480gid1_3d_ba01490000000000.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s311480gid1_3d_ba01490000000000.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s311480gid1_3d_ba01500000000000.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s311480gid1_3d_ba01500000000000.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s311480gid1_3d_ba01570000000000.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s311480gid1_3d_ba01570000000000.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s311480gid1_3d_ba01640000000000.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s311480gid1_3d_ba01640000000000.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s311480gid1_3d_bae1000000000000.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s311480gid1_3d_bae1000000000000.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s311480gid1_3d_bae2000000000000.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s311480gid1_3d_bae2000000000000.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s311480spn_3d_nntcwire.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s311480spn_3d_nntcwire.pb \
@@ -2024,22 +1641,31 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s311480spn_3d_syringa.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s311480spn_3d_syringa.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s311481.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s311481.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s311481gid1_3d_ba01450000000000.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s311481gid1_3d_ba01450000000000.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s311481gid1_3d_ba01640000000000.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s311481gid1_3d_ba01640000000000.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s311482.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s311482.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s311482gid1_3d_ba01450000000000.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s311482gid1_3d_ba01450000000000.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s311482gid1_3d_ba01640000000000.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s311482gid1_3d_ba01640000000000.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s311483.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s311483.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s311483gid1_3d_ba01450000000000.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s311483gid1_3d_ba01450000000000.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s311483gid1_3d_ba01640000000000.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s311483gid1_3d_ba01640000000000.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s311484.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s311484.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s311484gid1_3d_ba01450000000000.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s311484gid1_3d_ba01450000000000.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s311484gid1_3d_ba01640000000000.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s311484gid1_3d_ba01640000000000.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s311485.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s311485.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s311485gid1_3d_ba01450000000000.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s311485gid1_3d_ba01450000000000.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s311485gid1_3d_ba01640000000000.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s311485gid1_3d_ba01640000000000.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s311486.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s311486.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s311486gid1_3d_ba01450000000000.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s311486gid1_3d_ba01450000000000.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s311486gid1_3d_ba01640000000000.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s311486gid1_3d_ba01640000000000.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s311487.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s311487.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s311487gid1_3d_ba01450000000000.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s311487gid1_3d_ba01450000000000.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s311487gid1_3d_ba01640000000000.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s311487gid1_3d_ba01640000000000.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s311488.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s311488.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s311488gid1_3d_ba01450000000000.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s311488gid1_3d_ba01450000000000.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s311488gid1_3d_ba01640000000000.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s311488gid1_3d_ba01640000000000.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s311489.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s311489.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s311489gid1_3d_ba01450000000000.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s311489gid1_3d_ba01450000000000.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s311489gid1_3d_ba01640000000000.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s311489gid1_3d_ba01640000000000.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s311490.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s311490.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s311490gid1_3d_000003.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s311490gid1_3d_000003.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s311490gid1_3d_000005.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s311490gid1_3d_000005.pb \
@@ -2322,6 +1948,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s314020.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s314020.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s314090.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s314090.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s314200.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s314200.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s314240.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s314240.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s316010.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s316010.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s330000.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s330000.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s33011.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s33011.pb \
@@ -2786,6 +2413,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s42202.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s42202.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s42203.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s42203.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s42204.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s42204.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s42206.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s42206.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s42402.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s42402.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s42403.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s42403.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s42403imsi_3d_424030221xxxxxx.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s42403imsi_3d_424030221xxxxxx.pb \
@@ -2855,10 +2483,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s44011.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s44011.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s44013.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s44013.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s44020.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s44020.pb \
-    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s44020gid1_3d_01ffff.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s44020gid1_3d_01ffff.pb \
-    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s44020gid1_3d_16ffff.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s44020gid1_3d_16ffff.pb \
-    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s44020imsi_3d_440202.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s44020imsi_3d_440202.pb \
-    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s44020imsi_3d_4402082.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s44020imsi_3d_4402082.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s44050.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s44050.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s44050gid1_3d_10.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s44050gid1_3d_10.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s44050gid1_3d_20.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s44050gid1_3d_20.pb \
@@ -2963,6 +2587,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s46012.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s46012.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s46013.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s46013.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s46015.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s46015.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s46030.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s46030.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s46601.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s46601.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s46601imsi_3d_4660116090.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s46601imsi_3d_4660116090.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s46601imsi_3d_4660116091.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s46601imsi_3d_4660116091.pb \
@@ -3268,6 +2893,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s65507.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s65507.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s65507spn_3d_virgin.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s65507spn_3d_virgin.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s65510.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s65510.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s65512.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s65512.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s65701.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s65701.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s70267.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s70267.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s70299.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s70299.pb \
@@ -3311,7 +2937,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s722010gid1_3d_01.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s722010gid1_3d_01.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s72201gid1_3d_02.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s72201gid1_3d_02.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s72207.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s72207.pb \
-    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s722070.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s722070.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s72231.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s72231.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s722310.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s722310.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s72234.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s72234.pb \
@@ -3334,6 +2959,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s72423.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s72423.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s72424.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s72424.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s72426.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s72426.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s72429.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s72429.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s72430.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s72430.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s72431.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s72431.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s72432.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s72432.pb \
@@ -3400,4 +3026,446 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s90128.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s90128.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s90137.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s90137.pb \
     vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s90143.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s90143.pb \
-    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s90158.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s90158.pb
+    vendor/motorola/rhodep/proprietary/product/etc/CarrierSettings/s90158.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s90158.pb \
+    vendor/motorola/rhodep/proprietary/product/etc/permissions/com.motorola.moto-uirefresh.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.motorola.moto-uirefresh.xml \
+    vendor/motorola/rhodep/proprietary/product/etc/permissions/deviceowner-configuration-com.motorola.camera3.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/deviceowner-configuration-com.motorola.camera3.xml \
+    vendor/motorola/rhodep/proprietary/product/etc/permissions/privapp-permissions-com.motorola.camera3.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-com.motorola.camera3.xml \
+    vendor/motorola/rhodep/proprietary/product/etc/sysconfig/hiddenapi-whitelist-com.motorola.camera3.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/hiddenapi-whitelist-com.motorola.camera3.xml \
+    vendor/motorola/rhodep/proprietary/product/lib64/libAncHumanSegFigureFusion-jni.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libAncHumanSegFigureFusion-jni.so \
+    vendor/motorola/rhodep/proprietary/product/lib64/libFNVfbEngineHAL_legacy.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libFNVfbEngineHAL_legacy.so \
+    vendor/motorola/rhodep/proprietary/product/lib64/libNvBeautyEffect.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libNvBeautyEffect.so \
+    vendor/motorola/rhodep/proprietary/product/lib64/libNvEffectSdkCore.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libNvEffectSdkCore.so \
+    vendor/motorola/rhodep/proprietary/product/lib64/libanc_night.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libanc_night.so \
+    vendor/motorola/rhodep/proprietary/product/lib64/libarcsoft_dualcam_refocus.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libarcsoft_dualcam_refocus.so \
+    vendor/motorola/rhodep/proprietary/product/lib64/libarcsoft_high_dynamic_range.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libarcsoft_high_dynamic_range.so \
+    vendor/motorola/rhodep/proprietary/product/lib64/libarcsoft_low_light_shot.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libarcsoft_low_light_shot.so \
+    vendor/motorola/rhodep/proprietary/product/lib64/libarcsoft_scbokeh_Generic.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libarcsoft_scbokeh_Generic.so \
+    vendor/motorola/rhodep/proprietary/product/lib64/libas-super-slow-motion.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libas-super-slow-motion.so \
+    vendor/motorola/rhodep/proprietary/product/lib64/libbarhopper_v3.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libbarhopper_v3.so \
+    vendor/motorola/rhodep/proprietary/product/lib64/libbg-postproc-jni.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libbg-postproc-jni.so \
+    vendor/motorola/rhodep/proprietary/product/lib64/libc++.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libc++.so \
+    vendor/motorola/rhodep/proprietary/product/lib64/libc++_shared.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libc++_shared.so \
+    vendor/motorola/rhodep/proprietary/product/lib64/libcamerax_extension_jni.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libcamerax_extension_jni.so \
+    vendor/motorola/rhodep/proprietary/product/lib64/libdoc-util.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libdoc-util.so \
+    vendor/motorola/rhodep/proprietary/product/lib64/libdynamic_depth.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libdynamic_depth.so \
+    vendor/motorola/rhodep/proprietary/product/lib64/libfn-beauty-vfb-legacy-base.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libfn-beauty-vfb-legacy-base.so \
+    vendor/motorola/rhodep/proprietary/product/lib64/libfoundation.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libfoundation.so \
+    vendor/motorola/rhodep/proprietary/product/lib64/libgg-dynamic_depth.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libgg-dynamic_depth.so \
+    vendor/motorola/rhodep/proprietary/product/lib64/libgg-tensorflow-lite.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libgg-tensorflow-lite.so \
+    vendor/motorola/rhodep/proprietary/product/lib64/libgif.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libgif.so \
+    vendor/motorola/rhodep/proprietary/product/lib64/libjpeg.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libjpeg.so \
+    vendor/motorola/rhodep/proprietary/product/lib64/liblenovo_panorama.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/liblenovo_panorama.so \
+    vendor/motorola/rhodep/proprietary/product/lib64/libmcf-base.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libmcf-base.so \
+    vendor/motorola/rhodep/proprietary/product/lib64/libmcf-jni.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libmcf-jni.so \
+    vendor/motorola/rhodep/proprietary/product/lib64/libmcf-qc-fd-offline_local.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libmcf-qc-fd-offline_local.so \
+    vendor/motorola/rhodep/proprietary/product/lib64/libmcf-stand-alone-sm.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libmcf-stand-alone-sm.so \
+    vendor/motorola/rhodep/proprietary/product/lib64/libmeishe-nv-effects-thumbnails.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libmeishe-nv-effects-thumbnails.so \
+    vendor/motorola/rhodep/proprietary/product/lib64/libmmcamera_faceproc2.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libmmcamera_faceproc2.so \
+    vendor/motorola/rhodep/proprietary/product/lib64/libmorpho_HDSR.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libmorpho_HDSR.so \
+    vendor/motorola/rhodep/proprietary/product/lib64/libmorpho_cinema_graph.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libmorpho_cinema_graph.so \
+    vendor/motorola/rhodep/proprietary/product/lib64/libmorpho_panorama_gp3.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libmorpho_panorama_gp3.so \
+    vendor/motorola/rhodep/proprietary/product/lib64/libmorpho_panorama_gp3_core.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libmorpho_panorama_gp3_core.so \
+    vendor/motorola/rhodep/proprietary/product/lib64/libmorpho_sensor_fusion.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libmorpho_sensor_fusion.so \
+    vendor/motorola/rhodep/proprietary/product/lib64/libmot-cinemagraph-engine.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libmot-cinemagraph-engine.so \
+    vendor/motorola/rhodep/proprietary/product/lib64/libmot-util.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libmot-util.so \
+    vendor/motorola/rhodep/proprietary/product/lib64/libmpbase.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libmpbase.so \
+    vendor/motorola/rhodep/proprietary/product/lib64/libqc-snpe.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libqc-snpe.so \
+    vendor/motorola/rhodep/proprietary/product/lib64/libtensorflowlite.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libtensorflowlite.so \
+    vendor/motorola/rhodep/proprietary/product/lib64/libtensorflowlite_gpu_delegate.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libtensorflowlite_gpu_delegate.so \
+    vendor/motorola/rhodep/proprietary/product/lib64/libtensorflowlite_jni.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libtensorflowlite_jni.so \
+    vendor/motorola/rhodep/proprietary/system/etc/permissions/com.motorola.frameworks.core.addon.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.motorola.frameworks.core.addon.xml \
+    vendor/motorola/rhodep/proprietary/system/etc/permissions/com.motorola.motosignature.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.motorola.motosignature.xml \
+    vendor/motorola/rhodep/proprietary/system/etc/permissions/moto-checkin.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/moto-checkin.xml \
+    vendor/motorola/rhodep/proprietary/system/etc/permissions/moto-core_services.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/moto-core_services.xml \
+    vendor/motorola/rhodep/proprietary/system/etc/permissions/moto-settings.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/moto-settings.xml \
+    vendor/motorola/rhodep/proprietary/system_ext/bin/motsettings:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/motsettings \
+    vendor/motorola/rhodep/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
+    vendor/motorola/rhodep/proprietary/system_ext/lib/libnfc-sec.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libnfc-sec.so \
+    vendor/motorola/rhodep/proprietary/system_ext/lib/libnfc_sec_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libnfc_sec_jni.so \
+    vendor/motorola/rhodep/proprietary/system_ext/lib64/libnfc-sec.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libnfc-sec.so \
+    vendor/motorola/rhodep/proprietary/system_ext/lib64/libnfc_sec_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libnfc_sec_jni.so \
+    vendor/motorola/rhodep/proprietary/vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-focalservice:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.biometrics.fingerprint@2.1-focalservice \
+    vendor/motorola/rhodep/proprietary/vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-ets:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-ets \
+    vendor/motorola/rhodep/proprietary/vendor/bin/egis_ident:$(TARGET_COPY_OUT_VENDOR)/bin/egis_ident \
+    vendor/motorola/rhodep/proprietary/vendor/etc/acdbdata/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Bluetooth_cal.acdb \
+    vendor/motorola/rhodep/proprietary/vendor/etc/acdbdata/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/General_cal.acdb \
+    vendor/motorola/rhodep/proprietary/vendor/etc/acdbdata/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Global_cal.acdb \
+    vendor/motorola/rhodep/proprietary/vendor/etc/acdbdata/Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Handset_cal.acdb \
+    vendor/motorola/rhodep/proprietary/vendor/etc/acdbdata/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Hdmi_cal.acdb \
+    vendor/motorola/rhodep/proprietary/vendor/etc/acdbdata/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Headset_cal.acdb \
+    vendor/motorola/rhodep/proprietary/vendor/etc/acdbdata/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Speaker_cal.acdb \
+    vendor/motorola/rhodep/proprietary/vendor/etc/acdbdata/adsp_avs_config.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/adsp_avs_config.acdb \
+    vendor/motorola/rhodep/proprietary/vendor/etc/acdbdata/nn_ns_models/candidate__2.7.1.31__3.0.0__eai_1.10_enpu1.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/candidate__2.7.1.31__3.0.0__eai_1.10_enpu1.pmd \
+    vendor/motorola/rhodep/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__eai_1.00.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__eai_1.00.pmd \
+    vendor/motorola/rhodep/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.2.0_0.1__3.0.0_0.0__eai_1.00.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.2.0_0.1__3.0.0_0.0__eai_1.00.pmd \
+    vendor/motorola/rhodep/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.6.0_0.0__3.0.0_0.0__eai_1.00-1.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.6.0_0.0__3.0.0_0.0__eai_1.00-1.pmd \
+    vendor/motorola/rhodep/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.6.0_0.0__3.0.0_0.0__eai_1.00.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.6.0_0.0__3.0.0_0.0__eai_1.00.pmd \
+    vendor/motorola/rhodep/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.6.1_0.0__eai_v1.10.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.6.1_0.0__eai_v1.10.pmd \
+    vendor/motorola/rhodep/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.6.3_0.0__3.0.0_0.0__eai_1.10.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.6.3_0.0__3.0.0_0.0__eai_1.10.pmd \
+    vendor/motorola/rhodep/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.6.3_0.0__3.0.0_0.0__eai_1.10_enpu1.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.6.3_0.0__3.0.0_0.0__eai_1.10_enpu1.pmd \
+    vendor/motorola/rhodep/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.6.3_0.0__3.0.0_0.0__eai_1.36_enpu2.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.6.3_0.0__3.0.0_0.0__eai_1.36_enpu2.pmd \
+    vendor/motorola/rhodep/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.7.4_0.0__3.0.0_0.0__eai_1.10_enpu1.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.7.4_0.0__3.0.0_0.0__eai_1.10_enpu1.pmd \
+    vendor/motorola/rhodep/proprietary/vendor/etc/acdbdata/nn_vad_models/fai_3.0.0_0.0_eai_1.00.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_vad_models/fai_3.0.0_0.0_eai_1.00.pmd \
+    vendor/motorola/rhodep/proprietary/vendor/etc/audio_ext_spkr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_ext_spkr.conf \
+    vendor/motorola/rhodep/proprietary/vendor/etc/audio_io_policy.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_io_policy.conf \
+    vendor/motorola/rhodep/proprietary/vendor/etc/audio_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info.xml \
+    vendor/motorola/rhodep/proprietary/vendor/etc/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
+    vendor/motorola/rhodep/proprietary/vendor/etc/camera/SwadAIMod.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/SwadAIMod.bin \
+    vendor/motorola/rhodep/proprietary/vendor/etc/camera/SwadCalib.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/SwadCalib.bin \
+    vendor/motorola/rhodep/proprietary/vendor/etc/camera/SwadParamList.txt:$(TARGET_COPY_OUT_VENDOR)/etc/camera/SwadParamList.txt \
+    vendor/motorola/rhodep/proprietary/vendor/etc/camera/aec_golden_wide.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/aec_golden_wide.bin \
+    vendor/motorola/rhodep/proprietary/vendor/etc/camera/dual_golden_wide.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/dual_golden_wide.bin \
+    vendor/motorola/rhodep/proprietary/vendor/etc/camera/vidhance_calibration:$(TARGET_COPY_OUT_VENDOR)/etc/camera/vidhance_calibration \
+    vendor/motorola/rhodep/proprietary/vendor/etc/camera/vidhance_calibration_2rd:$(TARGET_COPY_OUT_VENDOR)/etc/camera/vidhance_calibration_2rd \
+    vendor/motorola/rhodep/proprietary/vendor/etc/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
+    vendor/motorola/rhodep/proprietary/vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-focalservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.biometrics.fingerprint@2.1-focalservice.rc \
+    vendor/motorola/rhodep/proprietary/vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service-ets2.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.biometrics.fingerprint@2.1-service-ets2.rc \
+    vendor/motorola/rhodep/proprietary/vendor/etc/init/android.hardware.nfc@1.2-service.sec.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.nfc@1.2-service.sec.rc \
+    vendor/motorola/rhodep/proprietary/vendor/etc/init/init.ets.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.ets.rc \
+    vendor/motorola/rhodep/proprietary/vendor/etc/init/init.nfc.sec.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.nfc.sec.rc \
+    vendor/motorola/rhodep/proprietary/vendor/etc/libnfc-mtp-SN100-UICC.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-mtp-SN100-UICC.conf \
+    vendor/motorola/rhodep/proprietary/vendor/etc/libnfc-mtp-SN100.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-mtp-SN100.conf \
+    vendor/motorola/rhodep/proprietary/vendor/etc/libnfc-mtp-SN100_38_4MHZ.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-mtp-SN100_38_4MHZ.conf \
+    vendor/motorola/rhodep/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
+    vendor/motorola/rhodep/proprietary/vendor/etc/libnfc-nxp-pnscr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp-pnscr.conf \
+    vendor/motorola/rhodep/proprietary/vendor/etc/libnfc-qrd-SN100.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-qrd-SN100.conf \
+    vendor/motorola/rhodep/proprietary/vendor/etc/libnfc-qrd-SN100_38_4MHZ.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-qrd-SN100_38_4MHZ.conf \
+    vendor/motorola/rhodep/proprietary/vendor/etc/libnfc-sec-vendor.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-sec-vendor.conf \
+    vendor/motorola/rhodep/proprietary/vendor/etc/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml \
+    vendor/motorola/rhodep/proprietary/vendor/etc/permissions/com.motorola.camera3.content.ai.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.motorola.camera3.content.ai.xml \
+    vendor/motorola/rhodep/proprietary/vendor/etc/permissions/com.motorola.camera3.lens.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.motorola.camera3.lens.xml \
+    vendor/motorola/rhodep/proprietary/vendor/etc/permissions/com.motorola.camera3.rhodep.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.motorola.camera3.rhodep.xml \
+    vendor/motorola/rhodep/proprietary/vendor/etc/permissions/com.motorola.camera3.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.motorola.camera3.xml \
+    vendor/motorola/rhodep/proprietary/vendor/etc/pwr/PowerFeatureConfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/pwr/PowerFeatureConfig.xml \
+    vendor/motorola/rhodep/proprietary/vendor/etc/pwr/VideoPowerOptFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/pwr/VideoPowerOptFeature.xml \
+    vendor/motorola/rhodep/proprietary/vendor/etc/qdcm_calib_data_mipi_mot_cmd_csot_1080p_dsc_655.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_mipi_mot_cmd_csot_1080p_dsc_655.xml \
+    vendor/motorola/rhodep/proprietary/vendor/etc/qdcm_calib_data_mipi_mot_cmd_tm_1080p_dsc_655.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_mipi_mot_cmd_tm_1080p_dsc_655.xml \
+    vendor/motorola/rhodep/proprietary/vendor/etc/qdcm_calib_data_nt36672e_60_Hz_fhd_plus_video_mode_panel_without_DSC.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_nt36672e_60_Hz_fhd_plus_video_mode_panel_without_DSC.xml \
+    vendor/motorola/rhodep/proprietary/vendor/etc/qdcm_calib_data_nt36672e_fhd_plus_120Hz_Video_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_nt36672e_fhd_plus_120Hz_Video_panel.xml \
+    vendor/motorola/rhodep/proprietary/vendor/etc/qdcm_calib_data_nt36672e_fhd_plus_144Hz_video_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_nt36672e_fhd_plus_144Hz_video_panel.xml \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sec_s3nrn4v_hwreg.bin:$(TARGET_COPY_OUT_VENDOR)/etc/sec_s3nrn4v_hwreg.bin \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sec_s3nrn4v_swreg.bin:$(TARGET_COPY_OUT_VENDOR)/etc/sec_s3nrn4v_swreg.bin \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/config/ak991x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/ak991x_0.json \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/config/holi_default_sensors.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/holi_default_sensors.json \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/config/holi_lsm6dso_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/holi_lsm6dso_0.json \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/config/holi_power_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/holi_power_0.json \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/config/icm4x6xx.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/icm4x6xx.json \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/config/mmc56x3x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/mmc56x3x_0.json \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/config/mot_camgest.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/mot_camgest.json \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/config/sns_amd.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_amd.json \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/config/sns_amd_sw_disabled.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_amd_sw_disabled.json \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/config/sns_amd_sw_enabled.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_amd_sw_enabled.json \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/config/sns_cm.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_cm.json \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/config/sns_diag_filter.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_diag_filter.json \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/config/sns_fmv.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_fmv.json \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/config/sns_fmv_legacy.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_fmv_legacy.json \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/config/sns_geomag_rv.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_geomag_rv.json \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/config/sns_gyro_cal.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_gyro_cal.json \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/config/sns_mag_cal.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_mag_cal.json \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/config/sns_rmd.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_rmd.json \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/config/sns_rotv.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_rotv.json \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/config/sns_smd.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_smd.json \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/config/sns_tilt_sw_enabled.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_tilt_sw_enabled.json \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/config/sns_tilt_to_wake.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_tilt_to_wake.json \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/config/sns_wrist_pedo.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_wrist_pedo.json \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/config/stk3a5x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/stk3a5x_0.json \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/config/stk3a5x_0_DVT1.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/stk3a5x_0_DVT1.json \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/config/stk3a5x_0_DVT2.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/stk3a5x_0_DVT2.json \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/descriptor.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/descriptor.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/mot_barocal.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/mot_barocal.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/mot_camgest.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/mot_camgest.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/mot_chopchop.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/mot_chopchop.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/mot_devorient.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/mot_devorient.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/mot_dsp_usound.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/mot_dsp_usound.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/mot_flip.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/mot_flip.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/mot_ftm.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/mot_ftm.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/mot_glance.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/mot_glance.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/mot_log.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/mot_log.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/mot_lts.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/mot_lts.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/mot_ltv.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/mot_ltv.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/mot_movement.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/mot_movement.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/mot_offbody.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/mot_offbody.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/mot_probe.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/mot_probe.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/mot_proxcal.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/mot_proxcal.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/mot_stowed.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/mot_stowed.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/mot_tap.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/mot_tap.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/mot_vsync.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/mot_vsync.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/nanopb.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/nanopb.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_accel.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_accel.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_accel_cal.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_accel_cal.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_activity_recognition.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_activity_recognition.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_ambient_light.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_ambient_light.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_ambient_temperature.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_ambient_temperature.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_amd.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_amd.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_aont.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_aont.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_basic_gestures.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_basic_gestures.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_bring_to_ear.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_bring_to_ear.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_cal.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_cal.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_client.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_client.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_cmc.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_cmc.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_da_test.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_da_test.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_device_mode.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_device_mode.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_device_orient.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_device_orient.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_diag.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_diag.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_diag_sensor.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_diag_sensor.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_direct_channel.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_direct_channel.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_dpc.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_dpc.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_ext_svc.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_ext_svc.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_facing.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_facing.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_fmv.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_fmv.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_formatter.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_formatter.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_formatter_notify.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_formatter_notify.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_fw.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_fw.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_game_rv.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_game_rv.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_geomag_rv.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_geomag_rv.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_gravity.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_gravity.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_gyro.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_gyro.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_gyro_cal.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_gyro_cal.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_gyro_rot_matrix.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_gyro_rot_matrix.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_hall.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_hall.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_heart_beat.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_heart_beat.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_heart_rate.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_heart_rate.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_hinge_angle.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_hinge_angle.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_humidity.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_humidity.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_mag.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_mag.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_mag_cal.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_mag_cal.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_mot_factory_cal.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_mot_factory_cal.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_oem1.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_oem1.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_offbody_detect.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_offbody_detect.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_pedometer.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_pedometer.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_pedometer_wrist.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_pedometer_wrist.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_physical_sensor_test.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_physical_sensor_test.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_pose_6dof.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_pose_6dof.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_ppg.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_ppg.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_pressure.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_pressure.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_proximity.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_proximity.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_psmd.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_psmd.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_registry.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_registry.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_resampler.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_resampler.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_rgb.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_rgb.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_rmd.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_rmd.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_rotv.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_rotv.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_sar.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_sar.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_sensor_temperature.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_sensor_temperature.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_sig_motion.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_sig_motion.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_std.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_std.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_std_event_gated_sensor.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_std_event_gated_sensor.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_std_sensor.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_std_sensor.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_std_type.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_std_type.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_step_detect.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_step_detect.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_suid.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_suid.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_thermopile.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_thermopile.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_threshold.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_threshold.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_tilt.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_tilt.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_tilt_to_wake.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_tilt_to_wake.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_ultra_violet.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_ultra_violet.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/sns_wrist_tilt_gesture.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_wrist_tilt_gesture.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/proto/tcs3708.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/tcs3708.proto \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sensors/sns_reg_config:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sns_reg_config \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sound_trigger_mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_mixer_paths.xml \
+    vendor/motorola/rhodep/proprietary/vendor/etc/sound_trigger_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_platform_info.xml \
+    vendor/motorola/rhodep/proprietary/vendor/etc/thermal-engine-rhodep.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-rhodep.conf \
+    vendor/motorola/rhodep/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
+    vendor/motorola/rhodep/proprietary/vendor/etc/vhw.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vhw.xml \
+    vendor/motorola/rhodep/proprietary/vendor/firmware/aw882xx_pid_2113_acf.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw882xx_pid_2113_acf.bin \
+    vendor/motorola/rhodep/proprietary/vendor/firmware/aw_skt.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_skt.bin \
+    vendor/motorola/rhodep/proprietary/vendor/firmware/csot_goodix_cfg_group.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/csot_goodix_cfg_group.bin \
+    vendor/motorola/rhodep/proprietary/vendor/firmware/csot_goodix_test_limits_255.csv:$(TARGET_COPY_OUT_VENDOR)/firmware/csot_goodix_test_limits_255.csv \
+    vendor/motorola/rhodep/proprietary/vendor/firmware/goodix-csot-gt9916S-2201040d-61EA60E3-rhodep.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/goodix-csot-gt9916S-2201040d-61EA60E3-rhodep.bin \
+    vendor/motorola/rhodep/proprietary/vendor/firmware/goodix-tianma-gt9916S-2201040d-61EA66BC-rhodep.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/goodix-tianma-gt9916S-2201040d-61EA66BC-rhodep.bin \
+    vendor/motorola/rhodep/proprietary/vendor/firmware/mot_dw9781c.prog:$(TARGET_COPY_OUT_VENDOR)/firmware/mot_dw9781c.prog \
+    vendor/motorola/rhodep/proprietary/vendor/firmware/sec_s3nrn4v_firmware.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/sec_s3nrn4v_firmware.bin \
+    vendor/motorola/rhodep/proprietary/vendor/firmware/tianma_goodix_cfg_group.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/tianma_goodix_cfg_group.bin \
+    vendor/motorola/rhodep/proprietary/vendor/firmware/tianma_goodix_test_limits_255.csv:$(TARGET_COPY_OUT_VENDOR)/firmware/tianma_goodix_test_limits_255.csv \
+    vendor/motorola/rhodep/proprietary/vendor/lib/libacdbloader.so:$(TARGET_COPY_OUT_VENDOR)/lib/libacdbloader.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib/libcamxexternalformatutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxexternalformatutils.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/com.mot.eeprom.mot_gt24p128e_s5kjn1_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.mot.eeprom.mot_gt24p128e_s5kjn1_eeprom.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/com.mot.eeprom.mot_gt24p64e_ov16a1q_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.mot.eeprom.mot_gt24p64e_ov16a1q_eeprom.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/com.mot.eeprom.mot_rhodep_gc02m1_otp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.mot.eeprom.mot_rhodep_gc02m1_otp.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/com.mot.eeprom.mot_rhodep_s5k4h7_otp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.mot.eeprom.mot_rhodep_s5k4h7_otp.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/com.qti.sensor.mot_gc02m1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.mot_gc02m1.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/com.qti.sensor.mot_ov16a1q.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.mot_ov16a1q.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/com.qti.sensor.mot_s5k4h7.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.mot_s5k4h7.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/com.qti.sensor.mot_s5kjn1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.mot_s5kjn1.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/com.qti.sensormodule.mot_rhodep_gc02m1_sunwin.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.mot_rhodep_gc02m1_sunwin.bin \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/com.qti.sensormodule.mot_rhodep_ov16a1q_ofilm.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.mot_rhodep_ov16a1q_ofilm.bin \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/com.qti.sensormodule.mot_rhodep_s5k4h7_qtech_ff.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.mot_rhodep_s5k4h7_qtech_ff.bin \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/com.qti.sensormodule.mot_rhodep_s5kjn1_qtech.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.mot_rhodep_s5kjn1_qtech.bin \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/com.qti.sensormodule.mot_rhodep_s5kjn1_sunny.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.mot_rhodep_s5kjn1_sunny.bin \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/com.qti.tuned.default.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.default.bin \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/com.qti.tuned.mot_rhodep_gc02m1.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.mot_rhodep_gc02m1.bin \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/com.qti.tuned.mot_rhodep_ov16a1q.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.mot_rhodep_ov16a1q.bin \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/com.qti.tuned.mot_rhodep_s5k4h7ff.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.mot_rhodep_s5k4h7ff.bin \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/com.qti.tuned.mot_rhodep_s5kjn1.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.mot_rhodep_s5kjn1.bin \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/com.qti.tuned.mot_rhodep_s5kjn1_2nd.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.mot_rhodep_s5kjn1_2nd.bin \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.arcsoft.node.mfnr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.arcsoft.node.mfnr.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.mot.node.dc_capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.mot.node.dc_capture.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.mot.node.dc_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.mot.node.dc_preview.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qti.camx.chiiqutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.camx.chiiqutils.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qti.eisv2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.eisv2.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qti.eisv3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.eisv3.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qti.hvx.addconstant.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.hvx.addconstant.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qti.hvx.binning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.hvx.binning.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qti.node.customhwnode.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.customhwnode.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qti.node.depth.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.depth.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qti.node.dewarp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.dewarp.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qti.node.dummyrtb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.dummyrtb.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qti.node.dummysat.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.dummysat.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qti.node.eisv2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.eisv2.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qti.node.eisv3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.eisv3.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qti.node.fcv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.fcv.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qti.node.formatconversion.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.formatconversion.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qti.node.gpu.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.gpu.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qti.node.memcpy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.memcpy.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qti.node.ml.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.ml.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qti.node.remosaic.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.remosaic.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qti.node.stich.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.stich.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qti.node.swaidenoiser.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.swaidenoiser.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qti.node.swbestats.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.swbestats.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qti.node.swcac.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.swcac.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qti.node.swlsc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.swlsc.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qti.node.swmctf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.swmctf.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qti.node.swmfnr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.swmfnr.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qti.node.swpdpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.swpdpc.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qti.node.swpreprocess.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.swpreprocess.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qti.node.swregistration.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.swregistration.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qti.stats.aec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.aec.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qti.stats.aecwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.aecwrapper.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qti.stats.aecxcore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.aecxcore.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qti.stats.af.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.af.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qti.stats.afd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.afd.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qti.stats.afwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.afwrapper.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qti.stats.asd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.asd.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qti.stats.awb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.awb.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qti.stats.awbwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.awbwrapper.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qti.stats.cnndriver.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.cnndriver.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qti.stats.haf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.haf.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qti.stats.hafoverride.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.hafoverride.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qti.stats.pdlib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.pdlib.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qti.stats.pdlibsony.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.pdlibsony.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qti.stats.pdlibwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.pdlibwrapper.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qtistatic.stats.aec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qtistatic.stats.aec.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qtistatic.stats.af.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qtistatic.stats.af.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qtistatic.stats.awb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qtistatic.stats.awb.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.qtistatic.stats.pdlib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qtistatic.stats.pdlib.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.vidhance.node.ica.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.vidhance.node.ica.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.vidhance.node.processing.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.vidhance.node.processing.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/com.vidhance.stats.aec_dmbr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.vidhance.stats.aec_dmbr.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/components/libdepthmapwrapper_secure.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/libdepthmapwrapper_secure.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/fdconfigpreview.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigpreview.bin \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/fdconfigpreviewlite.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigpreviewlite.bin \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/fdconfigvideo.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigvideo.bin \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/fdconfigvideolite.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigvideolite.bin \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/com.qti.chiusecaseselector.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.chiusecaseselector.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/com.qti.feature2.anchorsync.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.anchorsync.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/com.qti.feature2.demux.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.demux.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/com.qti.feature2.frameselect.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.frameselect.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/com.qti.feature2.fusion.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.fusion.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/com.qti.feature2.generic.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.generic.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/com.qti.feature2.gs.mannar.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.gs.mannar.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/com.qti.feature2.hdr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.hdr.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/com.qti.feature2.mcreprocrt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.mcreprocrt.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/com.qti.feature2.memcpy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.memcpy.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/com.qti.feature2.mfsr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.mfsr.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/com.qti.feature2.mux.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.mux.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/com.qti.feature2.rawhdr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.rawhdr.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/com.qti.feature2.realtimeserializer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.realtimeserializer.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/com.qti.feature2.rt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.rt.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/com.qti.feature2.rtmcx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.rtmcx.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/com.qti.feature2.serializer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.serializer.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/com.qti.feature2.swmf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.swmf.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/com.qti.settings.mannar.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.settings.mannar.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/com.qti.stats.common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.stats.common.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/com.qualcomm.mcx.distortionmapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.mcx.distortionmapper.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/com.qualcomm.mcx.linearmapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.mcx.linearmapper.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/com.qualcomm.mcx.policy.mfl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.mcx.policy.mfl.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/com.qualcomm.qti.mcx.usecase.extension.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.mcx.usecase.extension.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/hw/camera.qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/camera.qcom.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/hw/com.qti.chi.override.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/com.qti.chi.override.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/hw/fingerprint.focaltech.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.focaltech.default.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/hw/libfactorylib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/libfactorylib.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/libBSTSWAD.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libBSTSWAD.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/libRbsFlow.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libRbsFlow.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/libacdbloader.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libacdbloader.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/libaidenoiser.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaidenoiser.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/libaidenoiserv2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaidenoiserv2.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/libarcsoft_low_light_shot.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_low_light_shot.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/libbitmlengine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbitmlengine.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/libbitmlenginev2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbitmlenginev2.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/libcamera_nn_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamera_nn_stub.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/libcamerapostproc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamerapostproc.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/libcamxexternalformatutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxexternalformatutils.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/libcamxfacialfeatures.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxfacialfeatures.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/libcamxfdalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxfdalgo.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/libcamxfdengine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxfdengine.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/libcamxifestriping.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxifestriping.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/libcamximageformatutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamximageformatutils.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/libcamxqsatalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxqsatalgo.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/libcamxstatscore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxstatscore.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/libcamxswispiqmodule.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxswispiqmodule.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/libcamxswprocessalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxswprocessalgo.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/libcamxtintlessalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxtintlessalgo.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/libchilog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libchilog.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/libcom.qti.chinodeutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcom.qti.chinodeutils.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/libets_teeclient_v2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libets_teeclient_v2.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/libfcell.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfcell.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/libipebpsstriping.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libipebpsstriping.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/libipebpsstriping170.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libipebpsstriping170.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/libjpege.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjpege.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/liblowlight_ai_portrait.arcsoft.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblowlight_ai_portrait.arcsoft.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/libmctfengine_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmctfengine_stub.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/libmfec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmfec.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/libmmcamera_bestats.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_bestats.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/libmmcamera_cac3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_cac3.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/libmmcamera_faceproc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_faceproc.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/libmmcamera_faceproc2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_faceproc2.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/libmmcamera_lscv35.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_lscv35.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/libmmcamera_mfnr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_mfnr.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/libmmcamera_mfnr_t4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_mfnr_t4.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/libmmcamera_pdpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_pdpc.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/libmot_afd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmot_afd.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/libmotohid.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmotohid.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/libmotoisdataqueue.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmotoisdataqueue.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/libmpbase.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmpbase.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/libofflinedump.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libofflinedump.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/libofflinelog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libofflinelog.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/libopencv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libopencv.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/libopestriping.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libopestriping.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/libos.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libos.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/libpowercore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpowercore.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/libqll10.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqll10.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/libqllengine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqllengine.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/libremosaic_wrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libremosaic_wrapper.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/libswregistrationalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libswregistrationalgo.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/libsynx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsynx.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/libtfestriping.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtfestriping.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/libthreadutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libthreadutils.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/libundistort_impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libundistort_impl.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/libvideooptfeature.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvideooptfeature.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/libvidhance.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvidhance.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/libvidhance_active_ois.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvidhance_active_ois.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/libvidhance_dmbr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvidhance_dmbr.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/libvidhance_face_stabilizer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvidhance_face_stabilizer.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/libvidhance_fbc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvidhance_fbc.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/libvidhance_horizon_correction.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvidhance_horizon_correction.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/libvidhance_stabilizer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvidhance_stabilizer.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/libvidhance_zoom_stabilization.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvidhance_zoom_stabilization.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/sensors.moto.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.moto.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/sensors.ssc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.ssc.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/vendor.egistec.hardware.fingerprint@4.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.egistec.hardware.fingerprint@4.0.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/vendor.focaltech.fingerprint@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.focaltech.fingerprint@1.0.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
+
+PRODUCT_PACKAGES += \
+    MotoSignatureApp \
+    MotCamera3AI \
+    HotwordEnrollmentOKGoogleHEXAGON \
+    HotwordEnrollmentXGoogleHEXAGON \
+    MotCamera4 \
+    MotorolaSettingsProvider \
+    com.motorola.frameworks.core.addon \
+    com.motorola.motosignature \
+    moto-checkin \
+    moto-core_services \
+    moto-settings \
+    com.android.hotwordenrollment.common.util

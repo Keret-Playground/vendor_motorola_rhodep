@@ -1,6 +1,6 @@
 
-s24801imsi_3d_248010x2»ﬂ—ùKI
-Sendsend.eeZhttp://mms.emt.ee/servlets/mmsb217.71.32.82j8080"à(
+s24801imsi_3d_248010x2î∞”ùKI
+Sendsend.eeZhttp://mms.emt.ee/servlets/mmsb217.71.32.82j8080"ü(
 $carrier_default_wfc_ims_enabled_bool($
  carrier_default_wfc_ims_mode_int,
 (carrier_default_wfc_ims_roaming_mode_int9
@@ -13,4 +13,5 @@ $carrier_default_wfc_ims_enabled_bool($
 carrier_vt_available_bool("
 carrier_wfc_ims_available_bool(
 editable_wfc_mode_bool(&
-"enhanced_4g_lte_on_by_default_bool(
+"enhanced_4g_lte_on_by_default_bool(
+maxMessageSizeÄÄÄ

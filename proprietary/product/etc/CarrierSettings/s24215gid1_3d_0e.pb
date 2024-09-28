@@ -1,5 +1,7 @@
 
-s24215gid1_3d_0e»ﬂ—ù"’
+s24215gid1_3d_0eî∞”ùL 
+eRate Internetinternet(
+	eRate MMSmmsZhttp://mms.mediaj80"’
 maxImageHeightò
 maxImageWidth†
 maxMessageSizeÄÄÄ

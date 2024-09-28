@@ -1,9 +1,7 @@
 
-s52047»ﬂ—ù"¬
+s52047î∞”ù"Ä
 maxImageHeightò
-maxImageWidth†
-moto_smart_5g_enabled_bool( 
-moto_smart_5g_supported_bool(
+maxImageWidth†
 recipientLimit&
 roaming_operator_string_array2
 520

@@ -1,5 +1,5 @@
 
-s24004»ﬂ—ùhf
+s24004î∞”ùhf
 Telenor Mobilsurfservices.telenor.se2172.30.253.241:8799Z
 http://mmsb172.30.253.241j8799"‘
 maxImageHeightò

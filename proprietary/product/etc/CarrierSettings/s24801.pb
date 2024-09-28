@@ -1,7 +1,7 @@
 
-s24801»ﬂ—ù0.
+s24801î∞”ù0.
 EMT WAP
-wap.emt.ee2217.71.32.236:8080"à(
+wap.emt.ee2217.71.32.236:8080"ü(
 $carrier_default_wfc_ims_enabled_bool($
  carrier_default_wfc_ims_mode_int,
 (carrier_default_wfc_ims_roaming_mode_int9
@@ -14,4 +14,5 @@ $carrier_default_wfc_ims_enabled_bool($
 carrier_vt_available_bool("
 carrier_wfc_ims_available_bool(
 editable_wfc_mode_bool(&
-"enhanced_4g_lte_on_by_default_bool(
+"enhanced_4g_lte_on_by_default_bool(
+maxMessageSizeÄÄÄ

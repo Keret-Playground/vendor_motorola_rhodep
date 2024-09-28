@@ -1,8 +1,9 @@
 
-s24005spn_3d_telia»ﬂ—ù"‘
+s24005spn_3d_teliaî∞”ù"˘"
+carrier_wfc_ims_available_bool(
 maxImageHeightò
-maxImageWidth†
-maxMessageSizeÄ¿%
+maxImageWidth†
+maxMessageSizeÄÄÄ
 moto_smart_5g_enabled_bool( 
 moto_smart_5g_supported_bool(
 recipientLimit"
